@@ -27,6 +27,24 @@ This is a look at our new and improved engine that will be its own seprit browse
     make sure that when you are compiling the engine you give it the proper target response and configure the piplines as needed
     to avoid any problems make sure you have "Visual Studio 2022" or later
 
+  #Using The Pipline
+
+  when using the FireWebEngine it is important to note that it relies on the Pipline attribute which i contained by using v8 components and GPU Related Rendering
+  so that this can directly communicate with the hardware of your pc eledgidly giving a smoother rendering experince
+
+  ---> here you change the Pipline to give a recurring request to the two classes Response and Request the request class gives the Render a way to respond to the imput of hardware initifincations
+
+      'namespace FireWebEngineWinforms_Test
+{
+    internal interface Pipline
+    {
+        void PreProcessRequest(Request request);
+        void PostProcessResponse(Response response);
+        // Add any other methods or members you require for your pipeline
+    }
+}
+'
+
   # Documentation
   -- at this current moment there are no spacific documentation on publicly buildig the engine to support other platforms and other known issues
   thiswill come at a later date and will give thero instruction and need to know basics.
@@ -43,7 +61,4 @@ This is a look at our new and improved engine that will be its own seprit browse
    currently video encoding is very detrimental to the engine core and can cause crashes if not implamented properly
 
    # Framework infermation
-    currently this rendering engine is only for winforms but wpf uwp and other frameworks will be implamented at some point
-
-# Engine Implamentation into MainForm
- 'test'
+    + currently this rendering engine is only for winforms but wpf uwp and other frameworks will be implamented at some point
