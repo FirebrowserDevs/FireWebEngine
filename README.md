@@ -34,7 +34,8 @@ This is a look at our new and improved engine that will be its own seprit browse
 
   ---> here you change the Pipline to give a recurring request to the two classes Response and Request the request class gives the Render a way to respond to the imput of hardware initifincations
 
-      'namespace FireWebEngineWinforms_Test
+  '''C#
+  namespace FireWebEngineWinforms_Test
 {
     internal interface Pipline
     {
@@ -43,7 +44,7 @@ This is a look at our new and improved engine that will be its own seprit browse
         // Add any other methods or members you require for your pipeline
     }
 }
-'
+
 
   # Documentation
   -- at this current moment there are no spacific documentation on publicly buildig the engine to support other platforms and other known issues
